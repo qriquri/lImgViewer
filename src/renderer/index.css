@@ -1,0 +1,29 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+}
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track{
+  background-color: rgba(204, 204, 204, 0);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 1rem;
+  background-color: #9b9ca3;
+}
+
+/*長い文字列を省略表示できる*/
+.abbreviated-string {
+  overflow: hidden;
+  /* 改行を半角スペースに変換することで、1行にする */
+  white-space: nowrap;
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  text-overflow: ellipsis;
+}

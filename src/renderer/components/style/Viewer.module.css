@@ -1,0 +1,34 @@
+.container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.backArrow {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 4rem;
+  height: 100%;
+}
+
+.forwardArrow {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 4rem;
+  height: 100%;
+}
+
+.contents {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 4rem;
+  width: calc(100% - 8rem);
+  height: 100%;
+}
