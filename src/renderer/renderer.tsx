@@ -27,6 +27,7 @@
  */
 import React from 'react';
 import ReactDom from 'react-dom';
+import { createRoot} from 'react-dom/client';
 import { Start } from './components/Start';
 import { store } from './Store';
 import { Provider } from 'react-redux';
@@ -37,12 +38,11 @@ console.log('👋 This message is being logged by "renderer.js", included via we
 IpcRenderer.listen();
 
 const container = document.getElementById('contents');
-
-ReactDom.render(
+const root = createRoot(container);
+root.render(
   // 変更 -->
   <Provider store={store}>
     <Start />
   </Provider>,
   // <-- 変更
-  container,
 );
